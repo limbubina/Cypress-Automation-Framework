@@ -14,5 +14,9 @@ class Homepage_PO extends Base_PO {
     clickOn_Login_button(){
         cy.clickAndOpenLink_InSameTab("#login-portal"); //using the custom command
     }
+
+    clickOn_ButtonClicks_button(){
+        cy.clickAndOpenLink_InSameTab("#button-clicks");
+    }
 }
 export default Homepage_PO;

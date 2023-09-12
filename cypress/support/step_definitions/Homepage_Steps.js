@@ -5,8 +5,8 @@ import Homepage_PO from "../page_objects/Homepage_PO";
 
 //const url = "http://www.webdriveruniversity.com/";
 
-const  basePage = new Base_PO(); //initialising base page
-const homePage = new Homepage_PO();  //initialising homepage
+const basePage = new Base_PO(); //initialising base page
+const homePage = new Homepage_PO(); //initialising homepage
 
 Before(() => {
   cy.log("Executing commands inside Homepage steps");
@@ -28,4 +28,8 @@ When(`I click on the contact us button`, () => {
 When(`I click on the Login Portal button`, () => {
   //cy.get("#login-portal").invoke("removeAttr", "target").click();
   homePage.clickOn_Login_button();
+});
+
+When(`I click on the Button Clicks button`, () => {
+  homePage.clickOn_ButtonClicks_button();
 });
