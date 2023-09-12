@@ -4,7 +4,7 @@ Feature: Webdriveruniversity - Login Portal page
     Background: Pre condtions before each scenario
         Given I navigate to the webdriveruniversity login page
         #When I click on the Login Portal button
-        #When I wait for 5 seconds TEST
+        #When I wait for 5 seconds
 
     Scenario Outline: Validate Login button
         And I type a '<username>' and a '<password>'
